@@ -1,24 +1,51 @@
 # R2100LIDAR-data-reader-server 
 
-A serial reader build with python and pass data out to a website via websocket.
+# A Python serial reader 
+
+A serial reader User interface build with vue.js.
+
+Accept serial data via websockets and plot on canvas after parse it.
+
+
 
 
 ## Tech Stack
 
-- serial
+- Vue.js
+- canvas
 - websockets
 
 
   
-## Usage/Examples (with javascript )
+## Run Locally
 
-### Basic patten
+Need to work with real device and the serial read part build by pyhton [repo](https://github.com/PeterMyrobot/R2100LIDAR-data-reader-server)
 
-```javascript
-    const msg = { cmd: 'hexMsg', msg: this.hexMsg };
-    this.ws.send(JSON.stringify(msg));
+Clone the project
+
+```bash
+  git clone https://github.com/PeterMyrobot/R2100LIDAR-data-reader-client.git
 ```
 
+Go to the project directory
+
+```bash
+  cd my-project
+```
+
+Install dependencies
+
+```bash
+    yarn install
+```
+
+Start the server
+
+```bash
+    yarn serve
+```
+
+  
 ### Get serial port list
 
 ```javascript
